@@ -8,6 +8,6 @@ enum OrderStatus {
 }
 
 void main() {
-  OrderStatus status = OrderStatus.Cancelled;
-  print(status);
+  OrderStatus status = OrderStatus.Complete;
+  print(status.color);
 }
