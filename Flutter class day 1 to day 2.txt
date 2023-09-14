@@ -1,0 +1,139 @@
+void main() {
+  // //  int,double,String,,Bool,Map,List,Set,
+  // int number1 = 10;
+  // // double number2 =20.5;
+  // //  bool result=true;
+  // // List<String> students = ["Ram", "Hari", "Shyam"];
+  // // List<String> tempList = ["Gita", "John"];
+
+  // String example = "$number1*2=${number1 * 2}";
+
+  // // students.removeAt(2);
+  // Set
+  /* List<int> numbers = [1, 2, 3, 4, 5];
+  print(numbers.toSet().toList());*/
+
+  // Map studentDetails = {
+  //   "name": "Ram",
+  //   "Roll no": "40",
+  //   "Addresses": "Kathmandu",
+  // };
+
+  // // print('The info:$studentDetails/$example');
+  // print(studentDetails['Addresses']);
+
+//  conditions? ExpTrue: EXoIfElse
+  /*int number1 = 50;
+  int number2 = 100;
+  int number3 = 10;
+
+  int result = number1 > number2 && number1 > number3
+      ? number1
+      : (number2 > number1 && number2 > number3 ? number2 : number3);
+  print(result);*/
+// bandoperator
+  // String ? name= null;
+
+  // print(name?.length);
+  // List numbers;
+  // print([1,2,3,4...?numbers]);
+// ==? Operator;
+  // String? name;
+  // name ??= "Guest";
+  // print(name);
+
+  /* Switch Statement 
+  print('Enter weekdays:');
+  String? input = stdin.readLineSync();
+  switch (input?.toLowerCase()) {
+    case "sun" || "mon" || "tues" || "wed" || "thurs" || "fri":
+      print("It is  not weekend");
+    case "sat":
+      print("It is weekend");
+
+    default:
+      print('Invalid');
+
+      
+  }   */
+
+// If  Else statement
+
+  // int age = 10;
+  // if (age <= 10) {
+  //   print("Person is Child");
+  // } else {
+  //   print("People is  young");
+  // // }
+  // bool? suman = null;
+
+  // print(suman);
+  List<String> students = ["Ram", "Shyam", "Hari", "Sita", "Vivek"];
+  // bool contain = doesExit(students, "Hari");
+  // print(contain);
+
+  // int index = 0;
+
+  // while loop
+  // while (index < students.length) {
+  //   print(students[index]);
+  //   index++;
+  // }
+  // do while loop
+  // do {
+  //   print(students[index]);
+  //   index++;
+  // } while (index < students.length);
+
+  // for (int index = 0; index < students.length; index++) {
+  //   print(students[index]);
+  // }
+
+  ///for in loop with break and continue ///
+  // print(generateNames(students));
+
+  print(students.where((element) => element.length >= 4).toList());
+
+  for (String student in students) {
+    // print(student);
+    if (student == "Hari") {
+      //  we can add break here for breaking loop in  it(break)
+      continue;
+    }
+    print(student);
+    // print(generaterandomnumber());
+    // greet();
+    // }
+  }
+  
+
+// bool doesExit(List<String> items, String key) {
+//   for (String item in items) {
+//     if (item.toLowerCase() == key.toLowerCase()) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+// //  single line arrow =>
+// int generaterandomnumber() => Random().nextInt(100);
+
+// void greet() {
+//   print("Good Morning");
+// }
+
+// List<String> generateNames(List<String> items) {
+//   // List<String> temps = [];
+//   // for (String item in items) {
+//   //   if (item.length >= 4) {
+//   //     temps.add(item);
+//   //   }
+//   // }
+//   // return temps;
+
+//   return [
+//     for (String item in items)
+//       if (item.length >= 4) item
+//   ];
+// }
+}
